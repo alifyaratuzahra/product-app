@@ -9,6 +9,7 @@ export default function Menu() {
           <UserIcon className="h-8 w-8" />
           <span className="font-bold">Sign in</span>
         </Link>
+
         <Link href="/cart" className="header-button">
           <ShoppingCartIcon className="h-8 w-8" />
           <span className="font-bold">Cart</span>
