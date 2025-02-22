@@ -9,6 +9,7 @@ import {
 } from '@/lib/actions/product.actions';
 import data from '@/lib/data';
 import { toSlug } from '@/lib/utils';
+import BrowsingHistoryList from '@/components/shared/browsing-history-list';
 
 export default async function Page() {
   const categories = (await getAllCategories()).slice(0, 4);
@@ -86,6 +87,10 @@ export default async function Page() {
             />
           </CardContent>
         </Card>
+      </div>
+
+      <div className="p-4 bg-background">
+        <BrowsingHistoryList />
       </div>
     </>
   );
